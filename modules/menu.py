@@ -1,3 +1,6 @@
+from modules.keywords import *
+
+
 
 def nav():
     while True:
@@ -18,9 +21,9 @@ def nav():
         if option > 2:
             print('Opción no contemplada.')
         elif option == 1:
-            print('Importando palabras claves.')
+            load_keywords()
         elif option == 2:
-            print('Mostrando palabras claves.')
+            show_keywords(keywords)
         elif option == 0:
             print('Saliendo')
             break;
